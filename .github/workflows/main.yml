@@ -1,0 +1,15 @@
+name: call action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  acll-action-Job:
+    runs-on: ubuntu-latest
+    name: call action
+    steps:
+      - name: helloworld
+        uses: testbryce/testaction@main
+        with:
+          who-to-greet: Bryce
+        
